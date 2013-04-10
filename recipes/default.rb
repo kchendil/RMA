@@ -19,7 +19,7 @@ execute "Install RMA" do
 end
 
 
-execute "Configure Audit" do
+execute "Configure RMA for Audit" do
   command "#{jre_loc}/bin/java -jar #{rma_install_loc}/rma/rmaConfig.jar  +N"  
   creates "#{rma_install_loc}/rma/rma-config.log"  
   action :run
